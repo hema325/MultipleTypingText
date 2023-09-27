@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #010719;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.text-wrapper {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.text-wrapper .typed-text-animation {
+    color: #3f71e9;
+    padding-right: 5px;
+    border-right: 5px solid #3f71e9;
+}
+
+.text-wrapper .typed-text-animation.blinking {
+    animation-name: blinking-animation;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blinking-animation {
+    to {
+        border-right-color: transparent;
+    }
+}
